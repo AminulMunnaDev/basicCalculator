@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00BCD4"
+    android:paddingHorizontal="10dp"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="@color/black"
+        android:padding="10dp"
+        android:text="Calculator App"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="34.sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/Number1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="#4CAF50"
+        android:hint="enter number 1"
+        android:inputType="numberDecimal"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:textSize="24.sp" />
+
+    <EditText
+        android:id="@+id/Number2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="#4CAF50"
+        android:hint="enter number 2"
+        android:inputType="numberDecimal"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:textSize="24.sp" />
+
+    <LinearLayout
+        android:weightSum="40"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_weight="10"
+            android:layout_marginHorizontal="5dp"
+            android:id="@+id/btnAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
+            android:backgroundTint="@color/black"
+            android:text="ADD"
+            android:textSize="10dp"
+            android:textColor="@color/white" />
+
+        <Button
+            android:layout_marginHorizontal="5dp"
+            android:layout_weight="10"
+            android:id="@+id/btnSubtract"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
+            android:backgroundTint="@color/black"
+            android:text="SUB"
+            android:textSize="10dp"
+            android:textColor="@color/white" />
+
+        <Button
+            android:layout_weight="10"
+            android:id="@+id/btnMultiply"
+            android:layout_marginHorizontal="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
+            android:backgroundTint="@color/black"
+            android:text="Multiply"
+            android:textSize="10dp"
+            android:textColor="@color/white" />
+
+        <Button
+            android:layout_marginHorizontal="5dp"
+            android:layout_weight="10"
+            android:id="@+id/btnDivide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
+            android:backgroundTint="@color/black"
+            android:text="Division"
+            android:textSize="10dp"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/tvResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="#FF5722"
+        android:padding="10dp"
+        android:text="Result : 0"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="34.sp"
+        android:textStyle="bold" />
+
+
+</LinearLayout>
